@@ -97,7 +97,7 @@ const HeroSection = () => {
     {/* Gradient Overlay */}
     <div className="absolute inset-0 bg-gradient-to-b from-black/10 to-black/70">
       {/* Content */}
-      <div className="absolute inset-0 flex flex-col items-start justify-center text-center px-16 text-white">
+      <div className="absolute inset-0 flex flex-col items-start justify-center text-left md:text-center px-16 text-white">
         <p className="uppercase text-white w-full md:w-fit">Your rise to </p>
         <h1 className="text-4xl md:text-6xl font-bold mb-4">
           Your sport journey awaits you
@@ -105,7 +105,7 @@ const HeroSection = () => {
         <p className="text-lg md:text-xl mb-6">
           Transforming your ideas into reality with innovative solutions.
         </p>
-        <div className="flex gap-2">
+        <div className="flex gap-2 md:flex-row flex-col">
         <button className="h-fit bg-gray-50 text-gray-900 glassmorphism rounded-full pl-5 pr-2 py-2 flex items-center gap-3">
             <p className="font-medium">Get in Touch</p>
             <div className="rounded-full  flex items-center justify-center bg-black w-6 h-6">

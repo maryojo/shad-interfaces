@@ -1,28 +1,28 @@
 import { ArrowUp } from 'lucide-react'
 import React from 'react'
 
-const ReviewCard = () => {
+const ReviewCard = ({comment, reviewerName, trainerName, position, imgUrl, imgClass}) => {
   return (
     <div className='rounded-2xl bg-[#f3f0e9] w-full flex justify-between'>
       <div className='flex flex-col md:flex-row w-full'>
-      <div className='flex flex-col justify-between p-6 w-full'>
-        <p className='font-semibold'>
-          Comment
+      <div className='flex flex-col-reverse md:flex-col justify-between p-8 w-full'>
+        <p className='font-semibold w-full md:w-3/4 mb-5'>
+          {comment}
         </p>
-        <p className='text-sm font-semibold'>Name</p>
+        <p className='text-sm font-semibold text-neutral-400'>{reviewerName}</p>
       </div>
-      <div className='w-[0.5px] h-56 bg-[#6a5d3e6c]  my-auto md:block hidden'></div>
-      <div className='flex flex-col  justify-between w-full p-6'>
+      <div className='w-[0.5px] h-56 bg-[#6a5d3e6c]  my-auto md:block hidden mr-10'></div>
+      <div className='flex flex-col gap-20 justify-center w-full p-6'>
         <div className='flex flex-row gap-2 items-center'>
           <div className='rounded-full w-6 h-6'>
             <img src="https://images.pexels.com/photos/4927361/pexels-photo-4927361.jpeg?auto=compress&cs=tinysrgb&w=600" className='object-cover h-full w-full rounded-full'/>
           </div>
           <div className='flex flex-col'>
           <p className='font-medium'>
-            Trainer name
+            {trainerName}
           </p>
-          <p className='text-gray-400 text-[10px] font-medium'>
-            Position
+          <p className='text-neutral-400 text-[11px] font-medium'>
+            {position}
           </p>
           </div>
         </div>
@@ -33,12 +33,12 @@ const ReviewCard = () => {
               <ArrowUp width={12}/>
             </div>
           </div>
-          <p className='font-medium'>jdkjd</p>
+          <p className='font-medium text-[10px] text-neutral-500'>Get the very best</p>
         </div>
       </div>
       </div>
-      <div className='rounded-2xl h-[40vh] md:w-[35vw] md:h-[55vh] '>
-        <img className='rounded-2xl w-full h-full object-cover' src='https://images.pexels.com/photos/9643437/pexels-photo-9643437.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2'/>
+      <div className='rounded-2xl h-[40vh] md:w-[35vw] md:h-[55vh] lg:block hidden'>
+        <img className={`rounded-2xl w-full h-full object-cover object-top`} src={imgUrl}/>
       </div>
     </div>
   )
