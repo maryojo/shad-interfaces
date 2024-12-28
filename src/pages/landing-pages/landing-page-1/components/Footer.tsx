@@ -1,4 +1,3 @@
-import React from 'react'
 import passion from '../../../../assets/Fuel your passion.png';
 
 const Footer = () => {

@@ -1,10 +1,9 @@
-import React, { useRef } from 'react';
+import { useRef } from 'react';
 import Card from './Card';
 import { ChevronLeft, ChevronRight } from 'lucide-react';
-import { description } from '@/pages/ProfilePage01';
 
 const AboutSection = () => {
-  const scrollRef = useRef(null);
+  const scrollRef = useRef<HTMLDivElement>(null);
 
   const cardData = [
     {
@@ -45,7 +44,7 @@ const AboutSection = () => {
     },
   ];
 
-  const handleScroll = (direction) => {
+  const handleScroll = (direction: 'left' | 'right'): void => {
     if (scrollRef.current) {
       const { scrollLeft, clientWidth } = scrollRef.current;
       const scrollAmount = clientWidth / 2;

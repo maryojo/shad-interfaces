@@ -1,16 +1,7 @@
 // import Link from "next/link"
-import { CircleUser, Menu, Package2, Search, Ellipsis, MessageSquareText, Video, EllipsisVertical, ArrowUpRight } from "lucide-react"
+import { Menu, Package2, Search, Ellipsis, MessageSquareText } from "lucide-react"
 
 import { Button } from "@/components/ui/button"
-import {
-  Card,
-  CardContent,
-  CardDescription,
-  CardFooter,
-  CardHeader,
-  CardTitle,
-} from "@/components/ui/card"
-import { Checkbox } from "@/components/ui/checkbox"
 import {
   DropdownMenu,
   DropdownMenuContent,

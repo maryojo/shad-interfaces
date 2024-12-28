@@ -1,4 +1,3 @@
-import React from 'react'
 import {  ChevronRight, Clock, Equal } from "lucide-react"
 
 const HeroSection = () => {
